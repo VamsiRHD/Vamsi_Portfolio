@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rampalli Vamsi | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --csk-yellow: #FDB913;
+            --csk-blue: #0081C5;
+            --csk-navy: #002855;
+        }
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .heading-font { font-family: 'Oswald', sans-serif; text-transform: uppercase; }
+        .timeline-line { position: absolute; left: 20px; top: 0; bottom: 0; width: 2px; background: #e2e8f0; }
+        .skill-tag { background: #f1f5f9; border: 1px solid #e2e8f0; padding: 4px 12px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; color: var(--csk-navy); }
+        .experience-card { background: white; border: 1px solid #f1f5f9; transition: all 0.3s ease; }
+        .experience-card:hover { border-color: var(--csk-yellow); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body class="bg-white text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-slate-100">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="heading-font text-2xl text-[--csk-navy]">Vamsi <span class="text-[--csk-yellow]">Rampalli</span></span>
+            <div class="hidden md:flex gap-6 text-[10px] font-bold uppercase tracking-widest text-slate-400">
+                <a href="#about" class="hover:text-[--csk-yellow]">Profile</a>
+                <a href="#experience" class="hover:text-[--csk-yellow]">Innings</a>
+                <a href="#education" class="hover:text-[--csk-yellow]">Foundation</a>
+                <a href="#skills" class="hover:text-[--csk-yellow]">Arsenal</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="pt-32 pb-16 bg-[#FDB913]">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+                <div class="w-72 h-72 md:w-96 md:h-96 shrink-0 relative">
+                    <img src="converted-from-jpeg.jpeg" alt="Rampalli Vamsi" class="w-full h-full object-cover rounded-3xl shadow-2xl border-8 border-white">
+                    <div class="absolute -bottom-4 -right-4 bg-[--csk-navy] text-white p-4 rounded-xl shadow-xl">
+                        <p class="heading-font text-sm leading-none">Current</p>
+                        <p class="heading-font text-2xl text-[--csk-yellow]">SEO Executive</p>
+                    </div>
+                </div>
+                <div class="text-center md:text-left">
+                    <h1 class="heading-font text-6xl md:text-8xl text-[--csk-navy] leading-none mb-4">RAMPALLI VAMSI</h1>
+                    <p class="text-xl md:text-2xl font-medium text-[--csk-navy]/80 mb-6 italic">SEO Strategist • Content Head • AI/ML Engineer</p>
+                    <div class="grid grid-cols-2 md:flex gap-4 text-sm font-bold mb-8">
+                        <span class="bg-white/20 px-4 py-2 rounded-lg border border-[--csk-navy]/10">📍 Hyderabad/Bengaluru</span>
+                        <span class="bg-white/20 px-4 py-2 rounded-lg border border-[--csk-navy]/10">📞 +91 9381477490</span>
+                    </div>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                        <a href="mailto:vamsirampalli1@gmail.com" class="bg-[--csk-navy] text-white px-8 py-3 rounded-xl font-bold hover:scale-105 transition">Email Me</a>
+                        <a href="https://linkedin.com/in/rampalli-vamsi/" class="bg-white text-[--csk-navy] px-8 py-3 rounded-xl font-bold hover:scale-105 transition border border-slate-200">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Key Stats Scoreboard -->
+    <section class="py-12 bg-slate-50 border-b border-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-[--csk-blue]">
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Social Impressions</p>
+                    <h3 class="heading-font text-4xl text-[--csk-navy]">100M+</h3>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-[--csk-blue]">
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Total Audience</p>
+                    <h3 class="heading-font text-4xl text-[--csk-navy]">500K+</h3>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-[--csk-blue]">
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Blogs Delivered</p>
+                    <h3 class="heading-font text-4xl text-[--csk-navy]">500+</h3>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-[--csk-blue]">
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Link Building</p>
+                    <h3 class="heading-font text-4xl text-[--csk-navy]">60/50D</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Worked With -->
+<section class="py-14 bg-white border-b border-slate-100">
+    <div class="container mx-auto px-6">
+
+        <div class="text-center mb-10">
+            <p class="text-[10px] font-bold uppercase tracking-[0.4em] text-slate-400 mb-2">
+                Brands & Clients
+            </p>
+
+            <h2 class="heading-font text-4xl text-[--csk-navy]">
+                Clients Worked With
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+
+            <div class="flex items-center justify-center bg-slate-50 rounded-2xl p-6">
+                <img src="HCG.png" alt="HCG" class="h-14 object-contain">
+            </div>
+
+            <div class="flex items-center justify-center bg-slate-50 rounded-2xl p-6">
+                <img src="LF-Logo.png" alt="LF Logo" class="h-14 object-contain">
+            </div>
+
+            <div class="flex items-center justify-center bg-slate-50 rounded-2xl p-6">
+                <img src="segwise.png" alt="Segwise" class="h-14 object-contain">
+            </div>
+
+            <div class="flex items-center justify-center bg-slate-50 rounded-2xl p-6">
+                <img src="sigmainfo.png" alt="Sigma Info" class="h-14 object-contain">
+            </div>
+
+            <div class="flex items-center justify-center bg-slate-50 rounded-2xl p-6">
+                <img src="superk logo.avif" alt="SuperK" class="h-14 object-contain">
+            </div>
+
+            <div class="flex items-center justify-center bg-slate-50 rounded-2xl p-6">
+                <img src="niroggyan.png" alt="Niroggyan" class="h-14 object-contain">
+            </div>
+
+            <div class="flex items-center justify-center bg-slate-50 rounded-2xl p-6">
+                <img src="visit-logo.03c9c3d8.svg" alt="Visit Health" class="h-14 object-contain">
+            </div>
+
+            <div class="flex items-center justify-center bg-slate-50 rounded-2xl p-6">
+                <img src="Zeroharm_logo_1.avif" alt="Zero Harm" class="h-14 object-contain">
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    <!-- Films Worked With -->
+<section class="py-16 bg-white border-b border-slate-100">
+    <div class="container mx-auto px-6 max-w-7xl">
+
+        <div class="text-center mb-12">
+            <p class="text-[10px] font-bold uppercase tracking-[0.4em] text-slate-400 mb-2">
+                Digital Promotions
+            </p>
+
+            <h2 class="heading-font text-4xl text-[--csk-navy]">
+                Films Worked With
+            </h2>
+        </div>
+
+        <!-- Responsive Movie Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+
+            <!-- Movie Card -->
+            <div class="group">
+                <div class="overflow-hidden rounded-3xl shadow-sm border border-slate-200 bg-slate-50">
+                    <img 
+                        src="Sivakarthikeyan.jpg" 
+                        alt="Movie Name"
+                        class="w-full aspect-[2/3] object-cover"
+                    >
+                </div>
+
+                <h3 class="mt-4 text-center font-bold text-[--csk-navy] text-sm md:text-base">
+                    Amaran (Tamil)
+                </h3>
+            </div>
+
+            <!-- Movie Card -->
+            <div class="group">
+                <div class="overflow-hidden rounded-3xl shadow-sm border border-slate-200 bg-slate-50">
+                    <img 
+                        src="shyam.jpg" 
+                        alt="Movie Name"
+                        class="w-full aspect-[2/3] object-cover"
+                    >
+                </div>
+
+                <h3 class="mt-4 text-center font-bold text-[--csk-navy] text-sm md:text-base">
+                    Shyam Singha Roy (Telugu)
+                </h3>
+            </div>
+
+            <!-- Movie Card -->
+            <div class="group">
+                <div class="overflow-hidden rounded-3xl shadow-sm border border-slate-200 bg-slate-50">
+                    <img 
+                        src="ayalaan.jpg" 
+                        alt="Movie Name"
+                        class="w-full aspect-[2/3] object-cover"
+                    >
+                </div>
+
+                <h3 class="mt-4 text-center font-bold text-[--csk-navy] text-sm md:text-base">
+                    Ayalaan (Tamil)
+                </h3>
+            </div>
+
+            <!-- Movie Card -->
+            <div class="group">
+                <div class="overflow-hidden rounded-3xl shadow-sm border border-slate-200 bg-slate-50">
+                    <img 
+                        src="Pushpa Raj 🔥🔥🔥.jpg" 
+                        alt="Movie Name"
+                        class="w-full aspect-[2/3] object-cover"
+                    >
+                </div>
+
+                <h3 class="mt-4 text-center font-bold text-[--csk-navy] text-sm md:text-base">
+                    Pushpa The Rise (Telugu)
+                </h3>
+            </div>
+
+            <!-- Movie Card -->
+            <div class="group">
+                <div class="overflow-hidden rounded-3xl shadow-sm border border-slate-200 bg-slate-50">
+                    <img 
+                        src="madharaasi.jpg" 
+                        alt="Movie Name"
+                        class="w-full aspect-[2/3] object-cover"
+                    >
+                </div>
+
+                <h3 class="mt-4 text-center font-bold text-[--csk-navy] text-sm md:text-base">
+                    Madharaasi (Tamil)
+                </h3>
+            </div>
+
+            <!-- Movie Card -->
+            <div class="group">
+                <div class="overflow-hidden rounded-3xl shadow-sm border border-slate-200 bg-slate-50">
+                    <img 
+                        src="2018 movie.jpg" 
+                        alt="Movie Name"
+                        class="w-full aspect-[2/3] object-cover"
+                    >
+                </div>
+
+                <h3 class="mt-4 text-center font-bold text-[--csk-navy] text-sm md:text-base">
+                    2018 Movie (Malayalam)
+                </h3>
+            </div>
+
+            <!-- Movie Card -->
+            <div class="group">
+                <div class="overflow-hidden rounded-3xl shadow-sm border border-slate-200 bg-slate-50">
+                    <img 
+                        src="ANTE SUNDARANIKI.jpg" 
+                        alt="Movie Name"
+                        class="w-full aspect-[2/3] object-cover"
+                    >
+                </div>
+
+                <h3 class="mt-4 text-center font-bold text-[--csk-navy] text-sm md:text-base">
+                    Ante Sundaraniki (Telugu)
+                </h3>
+            </div>
+
+            <!-- Movie Card -->
+            <div class="group">
+                <div class="overflow-hidden rounded-3xl shadow-sm border border-slate-200 bg-slate-50">
+                    <img 
+                        src="Kingdom.jpg" 
+                        alt="Movie Name"
+                        class="w-full aspect-[2/3] object-cover"
+                    >
+                </div>
+
+                <h3 class="mt-4 text-center font-bold text-[--csk-navy] text-sm md:text-base">
+                    Kingdom (Telugu)
+                </h3>
+            </div>
+
+            <!-- Movie Card -->
+            <div class="group">
+                <div class="overflow-hidden rounded-3xl shadow-sm border border-slate-200 bg-slate-50">
+                    <img 
+                        src="Dhanaka movie image.jpg" 
+                        alt="Movie Name"
+                        class="w-full aspect-[2/3] object-cover"
+                    >
+                </div>
+
+                <h3 class="mt-4 text-center font-bold text-[--csk-navy] text-sm md:text-base">
+                    Dhamaka (Telugu)
+                </h3>
+            </div>
+
+            <!-- Movie Card -->
+            <div class="group">
+                <div class="overflow-hidden rounded-3xl shadow-sm border border-slate-200 bg-slate-50">
+                    <img 
+                        src="Dasara Movie HD Wallpaper Cast Star Nani.jpg" 
+                        alt="Movie Name"
+                        class="w-full aspect-[2/3] object-cover"
+                    >
+                </div>
+
+                <h3 class="mt-4 text-center font-bold text-[--csk-navy] text-sm md:text-base">
+                    Dasara (Telugu)
+                </h3>
+            </div>
+
+            <!-- Movie Card -->
+            <div class="group">
+                <div class="overflow-hidden rounded-3xl shadow-sm border border-slate-200 bg-slate-50">
+                    <img 
+                        src="Idlikadai Dhanush.jpg" 
+                        alt="Movie Name"
+                        class="w-full aspect-[2/3] object-cover"
+                    >
+                </div>
+
+                <h3 class="mt-4 text-center font-bold text-[--csk-navy] text-sm md:text-base">
+                    Idli Kadai (Tamil)
+                </h3>
+            </div>
+
+            <!-- Movie Card -->
+            <div class="group">
+                <div class="overflow-hidden rounded-3xl shadow-sm border border-slate-200 bg-slate-50">
+                    <img 
+                        src="super star  rajinikanth.jpg" 
+                        alt="Movie Name"
+                        class="w-full aspect-[2/3] object-cover"
+                    >
+                </div>
+
+                <h3 class="mt-4 text-center font-bold text-[--csk-navy] text-sm md:text-base">
+                    Vettaiyan (Tamil)
+                </h3>
+            </div>
+
+            <!-- Movie Card -->
+            <div class="group">
+                <div class="overflow-hidden rounded-3xl shadow-sm border border-slate-200 bg-slate-50">
+                    <img 
+                        src="KantaraChapter2 stills.jpg" 
+                        alt="Movie Name"
+                        class="w-full aspect-[2/3] object-cover"
+                    >
+                </div>
+
+                <h3 class="mt-4 text-center font-bold text-[--csk-navy] text-sm md:text-base">
+                    Kantara (Kannada)
+                </h3>
+            </div>
+
+            <!-- Movie Card -->
+            <div class="group">
+                <div class="overflow-hidden rounded-3xl shadow-sm border border-slate-200 bg-slate-50">
+                    <img 
+                        src="don.jpg" 
+                        alt="Movie Name"
+                        class="w-full aspect-[2/3] object-cover"
+                    >
+                </div>
+
+                <h3 class="mt-4 text-center font-bold text-[--csk-navy] text-sm md:text-base">
+                    DON (Tamil)
+                </h3>
+            </div>
+
+            <!-- Movie Card -->
+            <div class="group">
+                <div class="overflow-hidden rounded-3xl shadow-sm border border-slate-200 bg-slate-50">
+                    <img 
+                        src="Creative Logo Design.jpg" 
+                        alt="Movie Name"
+                        class="w-full aspect-[2/3] object-cover"
+                    >
+                </div>
+
+                <h3 class="mt-4 text-center font-bold text-[--csk-navy] text-sm md:text-base">
+                    and more...
+                </h3>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    <!-- Professional Experience -->
+    <section id="experience" class="py-20">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="heading-font text-4xl mb-12 flex items-center gap-4 text-[--csk-navy]">
+                <span class="w-2 h-10 bg-[--csk-yellow] rounded-full"></span> Career Highlights
+            </h2>
+            
+            <div class="space-y-8">
+                <!-- Mailmodo -->
+                <div class="experience-card p-8 rounded-3xl">
+                    <div class="flex flex-col md:flex-row justify-between mb-6 gap-2">
+                        <div>
+                            <h3 class="text-2xl font-bold text-[--csk-navy]">Mailmodo</h3>
+                            <p class="text-[--csk-blue] font-semibold">Marketing Intern • Bengaluru</p>
+                        </div>
+                        <span class="text-xs font-bold bg-slate-100 h-fit px-4 py-2 rounded-full uppercase">Marketing & Outreach</span>
+                    </div>
+                    <ul class="space-y-3 text-slate-600">
+                        <li class="flex items-start gap-3">
+                            <span class="text-[--csk-yellow] text-xl leading-none">●</span>
+                            <span>Built <strong>60 backlinks in 50 days</strong> through dedicated email outreach strategies.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-[--csk-yellow] text-xl leading-none">●</span>
+                            <span>Executed 10+ email campaigns (250–300 emails/day) with a <strong>~30% reply rate</strong>.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-[--csk-yellow] text-xl leading-none">●</span>
+                            <span>Created interactive <strong>AMP emails</strong> for diverse clients across US, Canada, UK, and Australia.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-[--csk-yellow] text-xl leading-none">●</span>
+                            <span>Authored SEO blogs on AMP forms and designed all supporting blog visuals (headers/banners).</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- GrowthByte -->
+                <div class="experience-card p-8 rounded-3xl">
+                    <div class="flex flex-col md:flex-row justify-between mb-6 gap-2">
+                        <div>
+                            <h3 class="text-2xl font-bold text-[--csk-navy]">GrowthByte (ThinkByte AI)</h3>
+                            <p class="text-[--csk-blue] font-semibold">SEO Executive & Content Writer • Bengaluru/Vijayawada</p>
+                        </div>
+                        <span class="text-xs font-bold bg-slate-100 h-fit px-4 py-2 rounded-full uppercase">Leadership & SEO</span>
+                    </div>
+                    <ul class="space-y-3 text-slate-600">
+                        <li class="flex items-start gap-3">
+                            <span class="text-[--csk-blue] text-xl leading-none">●</span>
+                            <span>Managed <strong>8 clients end-to-end</strong> covering Technical, On-page, and Off-page SEO.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-[--csk-blue] text-xl leading-none">●</span>
+                            <span>Led a <strong>team of 8</strong> for a multi-million dollar client project.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-[--csk-blue] text-xl leading-none">●</span>
+                            <span>Produced <strong>500+ blogs</strong> across healthcare, SaaS, fintech, and various other industries.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-[--csk-blue] text-xl leading-none">●</span>
+                            <span>Performed comprehensive competitor analysis, SEO audits, and created video content for Reels/Shorts.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Movies4u -->
+                <div class="experience-card p-8 rounded-3xl border-l-4 border-red-500">
+                    <div class="flex flex-col md:flex-row justify-between mb-6 gap-2">
+                        <div>
+                            <h3 class="text-2xl font-bold text-red-600">Movies4u Official</h3>
+                            <p class="text-slate-500 font-semibold">Film Reporter & Content Head • Hyderabad</p>
+                        </div>
+                        <span class="text-xs font-black bg-red-50 text-red-600 h-fit px-4 py-2 rounded-full uppercase">YT Silver Button</span>
+                    </div>
+                    <ul class="space-y-3 text-slate-600">
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 text-xl leading-none">●</span>
+                            <span>Generated <strong>100M+ impressions</strong> and built a 500K+ audience across Social Media.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 text-xl leading-none">●</span>
+                            <span>Promoted 400–450 films and hosted interviews/Instagram live sessions with film teams.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Cricket4u -->
+                <div class="experience-card p-8 rounded-3xl border-l-4 border-red-500">
+                    <div class="flex flex-col md:flex-row justify-between mb-6 gap-2">
+                        <div>
+                            <h3 class="text-2xl font-bold text-red-600">Cricket4u Official</h3>
+                            <p class="text-slate-500 font-semibold">Cricket Analyst • Hyderabad</p>
+                        </div>
+                        <span class="text-xs font-black bg-red-50 text-red-600 h-fit px-4 py-2 rounded-full uppercase">Sports Analyst</span>
+                    </div>
+                    <ul class="space-y-3 text-slate-600">
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 text-xl leading-none">●</span>
+                            <span>Started this during ICC Cricket World Cup 2023.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 text-xl leading-none">●</span>
+                            <span>Provided expert pre and post-match analysis across Test, ODI, T20, and IPL formats.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Freelance & Education -->
+    <section class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6 max-w-5xl grid md:grid-cols-2 gap-12">
+            
+            <div id="education">
+                <h2 class="heading-font text-3xl mb-8 text-[--csk-navy]">Education</h2>
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-[--csk-yellow]">
+                        <h4 class="font-bold">B.Tech - AI & ML</h4>
+                        <p class="text-sm text-slate-500">Vellore Institute of Technology (VIT-AP)</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-slate-200">
+                        <h4 class="font-bold">Class XII (Intermediate)</h4>
+                        <p class="text-sm text-slate-500">Sri Chaitanya Bhaskar Bhavan, Vijayawada</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-slate-200">
+                        <h4 class="font-bold">Class X (CBSE)</h4>
+                        <p class="text-sm text-slate-500">St John’s EM High School, Vijayawada</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="heading-font text-3xl mb-8 text-[--csk-navy]">Freelance & Training</h2>
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-[--csk-blue]">
+                        <h4 class="font-bold text-[--csk-blue]">Surendra Enterprises</h4>
+                        <p class="text-sm text-slate-600 mb-2">Web Developer & SEO Strategist</p>
+                        <p class="text-xs text-slate-500 italic">Built responsive UI for industrial mineral company; 15+ products; Optimized for B2B leads.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-[--csk-blue]">
+                        <h4 class="font-bold text-[--csk-blue]">Digital Marketing Trainer</h4>
+                        <p class="text-sm text-slate-600">Training students in SEO, content, and digital fundamentals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Playbook -->
+    <section id="skills" class="py-20 bg-[--csk-navy] text-white">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h2 class="heading-font text-4xl mb-16 text-center text-[--csk-yellow]">Technical Arsenal</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                
+                <div>
+                    <h4 class="heading-font text-xl mb-6 text-[--csk-blue]">SEO & Analytics</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">Technical SEO</span>
+                        <span class="skill-tag">GA4</span>
+                        <span class="skill-tag">Search Console</span>
+                        <span class="skill-tag">Core Web Vitals</span>
+                        <span class="skill-tag">Schema Markup</span>
+                        <span class="skill-tag">Mobile Optimization</span>
+                        <span class="skill-tag">Keyword Research</span>
+                        <span class="skill-tag">E-E-A-T</span>
+                        <span class="skill-tag">Link Building</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="heading-font text-xl mb-6 text-[--csk-blue]">Marketing & Media</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">SEO Writing</span>
+                        <span class="skill-tag">Content Strategy</span>
+                        <span class="skill-tag">Blog Writing</span>
+                        <span class="skill-tag">Email Marketing</span>
+                        <span class="skill-tag">Video Content</span>
+                        <span class="skill-tag">WordPress</span>
+                        <span class="skill-tag">SEMrush</span>
+                        <span class="skill-tag">Canva</span>
+                        <span class="skill-tag">Webflow</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="heading-font text-xl mb-6 text-[--csk-blue]">Technology & AI</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">MATLAB</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">Generative AI Tools</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Excel/Sheets</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements & Sports -->
+    <section class="py-16 text-center bg-slate-50">
+        <div class="container mx-auto px-6">
+            <h2 class="heading-font text-2xl mb-8 text-slate-400">Off the Field Achievements</h2>
+            <div class="flex flex-wrap justify-center gap-8 font-bold text-[--csk-navy]">
+                <span>♟ District Chess Player</span>
+                <span>🏏 University Cricket Semi-Finalist</span>
+                <span>🤼 Zonal Kabaddi Player</span>
+                <span>🛡️ National Level Cyber Security Hackathon Winner</span>
+                <span>🎬 Dubai Short Film Festival Winner [Best Director]</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-white text-center border-t border-slate-100">
+        <p class="text-slate-400 text-xs mb-4 uppercase tracking-[0.3em]">Built with #WhistlePodu Energy by Rampalli Vamsi</p>
+        <div class="flex justify-center gap-6">
+            <a href="https://github.com/VamsiRampalli" class="text-[--csk-navy] hover:text-[--csk-yellow] font-bold">GitHub</a>
+            <a href="https://linkedin.com/in/rampalli-vamsi/" class="text-[--csk-navy] hover:text-[--csk-yellow] font-bold">LinkedIn</a>
+        </div>
+    </footer>
+
+</body>
+</html>
